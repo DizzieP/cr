@@ -281,8 +281,28 @@
             <td class='description'>Controls the background color of elements.</td>
           </tr>
           <tr>
-          <td class='property'>Opacity</td>
+          <td class='property'>opacity</td>
           <td class='description'>Can be used to control the <strong>transparency</strong> of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+          </tr>
+          <tr>
+            <td class="property">font-weight</td>
+            <td class="description">Can be used to set the weight (boldness) of text.</td>
+          </tr>
+          <tr>
+            <td class="property">text-align</td>
+            <td class="description">Can be used to set the text alignment of inline contents. Can be set to left, right or center.</td>
+          </tr>
+          <tr>
+            <td class="property">font-family</td>amily</td>
+            <td class="description">Used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in <strong>quotes</strong>.</td>
+          </tr>
+          <tr>
+            <td class="property">color</td>
+            <td class="description">Can be used to set color property values for elements in CSS. Can be a valid color like green or blue. Or, a 3 digit or 6 color code like #22f or #2a2aff can be used to set the color.</td>
+          </tr>
+          <tr>
+            <td class="property">background-image</td>
+            <td class="description">Sets the background image of an element. An image URL should be provided in the syntax url("moon.jpg") as the value of the property.</td>
           </tr>
         </tbody>
       </table>
@@ -290,15 +310,22 @@
       <h2>CSS - Anatomy, Selectors and Specificity Notes</h2>
         <ul class='notes'>
           <li><strong>Purpose of CSS</strong> - A language that is used in combination with HTML that customizes how HTML elements will appear. CSS can define <strong>styles</strong> and change the <strong>layout</strong> and <strong>design</strong> of a sheet.</li>
+          <li><strong>CSS Declarations</strong> - The key-value pair of a CSS property and its value. They are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are separated by a colon and the entire declaration must be terminated by a semi-colon.</li>
+          <li><strong>Rule Sets</strong> - Contains one or more selectors and one or more declarations. The rule set is the main building block of a CSS sheet.</li>
+          <li><strong>Resource URLs</strong> - Used to wrap the resource URLs. These can be applied to several properties such as background-image.</li>
+          <li><strong>!important Rule</strong> - Used on declarations to override any other declarations for a property and ignore selector specificity. Ensures that a specific declaration always applies to the matched elements. Avoid using it because it is very hard to override.</li>
           <li><strong>Link Element</strong> - Used to link HTML documents to <strong>external resources</strong> like CSS files. It commonly uses: href - specifies the URL to the external resource, rel - specifies the relationship of the linked document to the current document and type - defines the type of content being linked.</li>
           <li><strong>Write CSS in Separate Files</strong> - CSS can be written in its own files to keep it separate from the HTML code. The extension for these files is .css. They can be linked to an HTML file using a &lt;link&gt; tag in the &lt;head&gt; section.</li>
           <li><strong>Write CSS in HTML File</strong> - Can be written in an HTML file by enclosing the code in &lt;style&gt; tags. Code surrounded by these tags will be interpreted as CSS syntax.</li>
           <li><strong>Inline Styles</strong> - CSS styles can be directly added to HTML elements by using the <strong>style</strong> attribute in the element's opening tag. Each style declaration is ended with a semicolon.</li>
           <li><strong>Groups of CSS Selectors</strong> - Match <strong>multiple</strong> selectors to the <strong>same</strong> CSS rule, using a <strong>comma-separated list</strong>.</li>
+          <li><strong>Selector Chaining</strong> - Defines the set of elements to which a CSS rule set applies.</li>
           <li><strong>Chaining Selectors</strong> - Sometimes in CSS, 2 or more CSS selectors are required at the same time. You can combine multiple selectors by chaining.</li>
           <li><strong>Descendant Combinator</strong> - Elements that are nested within HTML elements, known as <strong>descendants</strong>. Makes selectors even more specific by making sure they appear in the context we expect.</li>
           <li><strong>Specificity</strong> - Adding more than one tag, class or ID to a CSS selector increases the specificity of the CSS selector.</li>
-          </ul>
+          <li><strong>Separating HTML code from CSS code</strong> - Much easier to maintain, keeping the syntax for each file separate.</li>
+          <li><strong>HTML Attrinutes with Multiple Values</strong> - Multiple attribute values are separated by a space between each attribute.</li>      
+        </ul>
           <br>
           <h2>Typography Properties</h2>
           <table>
