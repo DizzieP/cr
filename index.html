@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheatsheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto+Mono&family=Rubik+Microbe&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=IM+Fell+English:ital@1&family=Roboto+Mono&family=Rubik+Microbe&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjord+One&family=IM+Fell+English:ital@1&family=Roboto+Mono&family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <link href='./cheatsheet.css' rel='stylesheet'>
+  </head>
+    <body>
+      <h1>Coding Revision Cheatsheet</h1>
+      <h2>Table Tags</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='tag'>&lt;table&gt;</td>
+            <td class='name'>Table</td>
+            <td class='description'>The wrapper element for all HTML tables.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;thead&gt;</td>
+            <td class='name'>Table Head</td>
+            <td class='description'>Defines the headings of table columns within table rows.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;tbody&gt;</td>
+            <td class='name'>Table Body</td>
+            <td class='description'>Contains all table data other than table heading and table footer content. It will contain all table rows. Cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;tr&gt;</td>
+            <td class='name'>Table Row</td>
+            <td class='description'>Adds rows to a table before adding table headings and data.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;th&gt;</td>
+            <td class='name'>Table Heading</td>
+            <td class='description'>Adds titles to rows and columns of a table and must be in a <strong>row</strong> element.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;td&gt;</td>
+            <td class='name'>Table Data</td>
+            <td class='description'>Can be nested inside a table row element to add a cell of <strong>data</strong> to a table.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;tfoot&gt;</td>
+            <td class='name'>Table Footer</td>
+            <td class='description'>Uses table rows to give footer <strong>content</strong> or summarize content at the end of a table.</td>
+          </tr>
+        </tbody>
+        </table>
+        <br>
+      <h2>Table Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='attribute'>colspan</td>
+            <td class='name'>Colspan Attribute</td>
+            <td class='description'>Indicates how many columns that particular cell should span in a table on a table header or table data element. The colspan value is set to 1 by default and will only go from between 1 to 1000.</td>
+          </tr>
+          <tr>
+            <td class='attribute'>rowspan</td>
+            <td class='name'>Rowspan Attribute</td>
+            <td class='description'>Indicates how many rows that particular cell should span in a table on a table header or table data element. The rowspan value is set to 1 by default and will go up to 65534.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2>Elements and Structure Tags</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='tag'>&lt;html&gt;</td>
+            <td class='name'>HTML</td>
+            <td class='description'>HyperText Markup Language is used to give content to a web page and instructs web browsers on how to structure that content.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;li&gt;</td>
+            <td class='name'>List Item</td>
+            <td class='description'>Creates list items inside ordered lists, &lt;ol&gt; and unordered lists, &lt;ul&gt;.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;video&gt;</td>
+            <td class='name'>Video</td>
+            <td class='description'>Embeds a media player for video playback. The src attribute contains the URL to the video. Adding the controls attribute will display video controls in the media player.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;em&gt;</td>
+            <td class='name'>Emphasis</td>
+            <td class='description'>Emphasizes text and browsers will usually <em>italicize</em> the emphasized text by default.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;div&gt;</td>
+            <td class='name'>Div</td>
+            <td class='description'>Used as a container that divides an HTML document into sections and is short for 'division'. Can contain <em>flow content</em> such as headings, paragraphs, links, images, etc.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;ol&gt;</td>
+            <td class='name'>Ordered List</td>
+            <td class='description'>Creates a list of items in <strong>sequential</strong> order. Each list item appears numbered by default.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;br&gt;</td>
+            <td class='name'>Line Break</td>
+            <td class='description'>Creates a line break in text and is especially useful where a division of text is required, e.g. a postal address. It requires only an opening tag and must <strong>not</strong> have a closing tag.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;img&gt;</td>
+              <td class='name'>Image</td>
+              <td class='description'>Embed images in documents. The src attribute contains the imagr URL and is <strong>mandatory</strong>. It is an empty element, so no closing tag.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;h1&gt;-&lt;h6&gt;</td>
+              <td class='name'>Heading</td>
+              <td class='description'>Can use 6 different levels of heading elements. The heading elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;p&gt;</td>
+              <td class='name'>Paragraph</td>
+              <td class='description'>Contains and displays a block of text.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;ul&gt;</td>
+              <td class='name'>Unordered List</td>
+              <td class='description'>Creates a list of items in <strong>no particular order</strong>. Each individual list item will have a bullet point by default.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;body&gt;</td>
+              <td class='name'>Body</td>
+              <td class='description'>Represents the content of an HTML document. Content inside &lt;body&gt; tags are rendered on the web browsers. There can only be one &lt;body&gt; element in a document.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;span&gt;</td>
+              <td class='name'>Span</td>
+              <td class='description'>An inline container for text and can be used to group text for <strong>styling</strong> purposes. It is a generic container that separates pieces of text from a larger body of text. It should be avoided if a more semantic element is available.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;strong&gt;</td>
+              <td class='name'>Strong</td>
+              <td class='description'>Highlights important, serious or urgent text. Browsers will normally render this highlighted text in <strong>bold</strong> by default.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;title&gt;</td>
+              <td class='name'>Title</td>
+              <td class='description'>Contains a text that defines the title of an HTML document. The title is displayed in the browser's title or tab bar in which the HTML page is displayed. The &lt;title&gt; element can only be contained inside a document's &lt;head&gt; element.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;!DOCTYPE html&gt;</td>
+              <td class='name'>Document Type Declaration</td>
+              <td class='description'>Required as the first line of an HTML document. It is an instruction to the browser about what type of document to expect and which version of HTML is being used, e.g. HTML5.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;a&gt;</td>
+              <td class='name'>Anchor</td>
+              <td class='description'>Used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href etermines the location the anchor element points to.</td>
+            </tr>
+            <tr>
+              <td class='tag'>&lt;head&gt;</td>
+              <td class='name'>Head</td>
+              <td class='description'>Contains general information about an HTML page that isn't displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.</td>
+              </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2>Elements and Structure Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='attribute'>target</td>
+            <td class='name'>Target</td>
+            <td class='description'>The target attribute on an &lt;a&gt; element specifies where a hyperlink should be opened. A target value of "_blank" will tell the browser to open the hyperlink in a <strong>new tab</strong> in modern browsers, or in a new window in older browsers or if the browser has had settings changed to open hyperlinks in a new window.</td>
+          </tr>
+          <tr>
+            <td class='attribute'>alt</td>
+            <td class='name'>Alt</td>
+            <td class='description'>An &lt;img&gt; element can have alternative text via the alt attribute. It will be displayed if an image fails to render due to an <strong>incorrect URL</strong>, f the image is <strong>blocked</strong> from being displayed, or if the image has <strong>not been received</strong> from the URL. The text will be read aloud if screen reading software is used and helps support <strong>visually impaired</strong> users by providing a text descriptor for the image content on a webpage.</td>
+          </tr>
+          <tr>
+            <td class='attribute'>id</td>
+            <td class='name'>ID</td>
+            <td class='description'>Specific and unique id attributes can e assigned to different elements in order to differentiate between them. Can be called upon by CSS and JavaScript to manipulate, format and perform specific instructions on that element and that element <strong>only</strong>. Valid id attributes should begin with a <strong>letter</strong> and should only contain letters (a-z), numbers (0-9), hyphens (-), underscores (_) and periods (.).</td>
+          </tr>
+         </tbody>
+         <tfoot>
+           <tr>
+             <td colspan='3'>Note: HTML attributes are <strong>values added to the opening tag of an element to configure the element or change the element's default behaviour</strong>, e.g. id and style attributes.</td>
+            </tr>
+          </tfoot>
+      </table>
+      <br>
+      <h2>Elements and Structure Notes</h2>
+      <ul class='notes'>
+        <li><strong>Element Content</strong> - the content of an HTML element is the information between the opening and closing tags of an element.</li>
+        <li><strong>HTML Structure</strong> - HTML is organized into a <strong>family tree</strong> structure. HTML can have parents, grandparents, siblings, children, grandchildren, etc.</li>
+        <li><strong>Attribute Name and Values</strong> - HTML attributes consist of a name and a value using the following syntax: name='value' and can be added to the opening tag of an HTML element to configure or change the behaviour of the element.</li>
+        <li><strong>Whitespace</strong> - Whitespace, such as line breaks, added to an HTML document between block-level elements will generally be ignored b the browserand are not added to increase spacing on the rendered HTML page. It is just added for <strong>organization an easier reading</strong> of the HTML document.</li>
+        <li><strong>File Path</strong> - URL paths in HTML can be <strong>absolute</strong> paths, like a full URL, e.g. https://developer.mozilla.ord/en-US/docs/Learn or a <strong>relative</strong> file path that links to a local file in the same folder or on the same server, e.g. ./style.css. Relative file paths begin with <strong>./</strong> followed by a path to the local file. ./ tells the browser to look for the file path from the current folder.</li>
+        <li><strong>HTML Element</strong> - A piece of content in an HTML document and uses the following syntax: opening tag + content + closing tag.</li>
+        <li><strong>HTML Tag</strong> - The syntax for a single HTML tag is an opening angle bracket &lt; followed by the element name and a closing angle bracket &gt;.</li> 
+        <li><strong>Indentation</strong> - Should be formatted so that the indentation level of text increases once for each level of nesting. You can use 2 to 4 spaces per level of nesting.</li>
+        <li><strong>Link to a Different Part of the Page #</strong> - The anchor element 7lt;a&gt; can create hyperlinks to <strong>different parts</strong> of the same HTML document using the href attribute to point to the desired location with # followed by thr id of the element to link to.</li>
+        <li><strong>Comments</strong> - Can be added between an opening &lt;!-- and closing --&gt;. Content inside of comments will not be rendered by browsers and are usually used to <strong>describe</strong> a part of code or provide other details. Comments can span single or multiple lines.</li>
+      </ul>
+      <br>
+      <h2>CSS: Anatomy</h2>
+      <img src='./CSS Anatomy.png' alt='Table of CSS ruleset and inline style structure' class='anatomy'>
+      <br>
+      <h2>CSS: Selectors</h2>
+      <table>
+        <thead>
+          <tr>
+          <th class='th-css'>Selector</th>
+          <th class='th-css'>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='selector'>class</td>
+            <td class='description-2'>CSS classes can be <strong>reusable</strong> and applied to <strong>many</strong> elements. They are denoted with a . followed by the class name.</td>
+          </tr>
+          <tr>
+            <td class='selector'>id</td>
+            <td class='description-2'>ID selectors should be <strong>unique</strong> and used to style only a <strong>single</strong> element. They are denoted with a # and are followed by the id name.</td>
+            </tr>
+            <tr>
+              <td class='selector'>type</td>
+              <td class='description-2'>Used to match all elements of a given type or tag name. Unlike for HTML syntax, we do not include the angle brackets when using type selectors for tag names. Elements are matched regardless of their nesting level in the HTML.</td>
+            </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2>CSS: Properties</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class='th-css'>Property</th>
+            <th class='th-css'>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='property'>font-size</td>
+            <td class='description'>The font-size CSS property is used to set text sizes. Font size values can be many different units or types, such as pixels.</td>
+          </tr>
+          <tr>
+            <td class='property'>background-color</td>
+            <td class='description'>Controls the background color of elements.</td>
+          </tr>
+          <tr>
+          <td class='property'>Opacity</td>
+          <td class='description'>Can be used to control the <strong>transparency</strong> of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2>CSS - Anatomy, Selectors and Specificity Notes</h2>
+        <ul class='notes'>
+          <li><strong>Purpose of CSS</strong> - A language that is used in combination with HTML that customizes how HTML elements will appear. CSS can define <strong>styles</strong> and change the <strong>layout</strong> and <strong>design</strong> of a sheet.</li>
+          <li><strong>Link Element</strong> - Used to link HTML documents to <strong>external resources</strong> like CSS files. It commonly uses: href - specifies the URL to the external resource, rel - specifies the relationship of the linked document to the current document and type - defines the type of content being linked.</li>
+          <li><strong>Write CSS in Separate Files</strong> - CSS can be written in its own files to keep it separate from the HTML code. The extension for these files is .css. They can be linked to an HTML file using a &lt;link&gt; tag in the &lt;head&gt; section.</li>
+          <li><strong>Write CSS in HTML File</strong> - Can be written in an HTML file by enclosing the code in &lt;style&gt; tags. Code surrounded by these tags will be interpreted as CSS syntax.</li>
+          <li><strong>Inline Styles</strong> - CSS styles can be directly added to HTML elements by using the <strong>style</strong> attribute in the element's opening tag. Each style declaration is ended with a semicolon.</li>
+          <li><strong>Groups of CSS Selectors</strong> - Match <strong>multiple</strong> selectors to the <strong>same</strong> CSS rule, using a <strong>comma-separated list</strong>.</li>
+          <li><strong>Chaining Selectors</strong> - Sometimes in CSS, 2 or more CSS selectors are required at the same time. You can combine multiple selectors by chaining.</li>
+          <li><strong>Descendant Combinator</strong> - Elements that are nested within HTML elements, known as <strong>descendants</strong>. Makes selectors even more specific by making sure they appear in the context we expect.</li>
+          <li><strong>Specificity</strong> - Adding more than one tag, class or ID to a CSS selector increases the specificity of the CSS selector.</li>
+          </ul>
+          <br>
+          <h2>Typography Properties</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class='th-css'>Property</th>
+                <th class='th-css'>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class='property'>font-weight</td>
+                <td class='description'>Declares how thick or thin the text characters will be. Numerical values can be used to set the thickness of the text. The range is from 100 to 900 and accepts only multiples of <strong>100</strong>. The default value is normal and the default numerical value is 400. 400 and below will make the text appear lighter than the default while any value greater than 400 will appear bolder.</td>
+              </tr>
+              <tr>
+                <td class='property'>font-style</td>
+                <td class='description'>Determines the font style in which text will appear, e.g. italic.</td>
+              </tr>
+              <tr>
+                <td class='property'>text-align</td>
+                <td class='description'>Can be used to set the text alignment of inline contents. Can be set to left, right or center.</td>
+              </tr>
+              <tr>
+                <td class='property'>color</td>
+                <td class='description'>Using the color property, foreground text color of an element can be set in CSS. The value can be a valid color name supported in CSS like green or blue. Also, 3 digit, e.g. #22f or 6 digit, e.g. #2a2aff can be used to set the color.</td>
+              </tr>
+              <tr>
+                <td class='property'>background-image</td>
+                <td class='description'>Sets the background image of an element. An image URL should be provided in the syntax url('moon.jpg') as the value of the property.</td>
+              </tr>
+              <tr>
+                <td class='property'>font-family</td>
+                <td class='description'>Specifies the <strong>typeface</strong> in a ruleset. Fonts must be available to the browser to display correctly, either on the computer or liked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in <strong>quotes</strong>.</td>
+              </tr>
+              <tr>
+                <td class='property'>line-height</td>
+                <td class='description'>Declares the <strong>vertical spacing</strong> between lines of text. It accepts both unitless numbers as a ratio, e.g. 2 and numbers specified by unit as values, e.g. 12px, but it does not accept negative numbers. A unitless number is an absolute value that will compute the line height as a ratio to the font size and a unit can be any valid CSS unit, e.g. pixels, percents, ems, rems, etc.</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <h2>Typography Notes</h2>
+          <ul class='notes'>
+            <li><strong>Rule Sets</strong> - Contains one or more selectors and one or more declarations. It is the main building block of a CSS sheet.</li>
+            <li><strong>@font-face rule</strong> - Allows external fonts or font files to be imported <strong>directly</strong> into stylesheets. The location of the font file must be specified in the CSS rule so that the files can be loaded from that location. This rule also allows locally hosted fonts to be added using a relative file path instead of a web URL.</li>
+            <li><strong>Fallback Fonts</strong> - font-family can have <strong>multiple</strong> fonts declared in order of preference. Im this case the fonts following the initial font are known as the fallback fonts. If the initial value of the property fails to load to the webpage, the fallback fonts will be used.</li>
+            <li><strong>Resource URLs</strong> - Usesd to wrap resource URLs. These can be applied to several properties, such as the background-image.</li>
+            <li><strong>Linking Fonts</strong> - Allows user to use web fonts in the document. They can be imported in an HTML document by using the &lt;link&gt; tag. Once the web font URL is placed within the href attribute, the importd font can then be used in the CSS declaration</li>
+            </ul>
+        </body>
+    </html>
