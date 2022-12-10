@@ -293,7 +293,7 @@
             <td class="description">Can be used to set the text alignment of inline contents. Can be set to left, right or center.</td>
           </tr>
           <tr>
-            <td class="property">font-family</td>amily</td>
+            <td class="property">font-family</td>
             <td class="description">Used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in <strong>quotes</strong>.</td>
           </tr>
           <tr>
@@ -375,5 +375,40 @@
             <li><strong>Resource URLs</strong> - Usesd to wrap resource URLs. These can be applied to several properties, such as the background-image.</li>
             <li><strong>Linking Fonts</strong> - Allows user to use web fonts in the document. They can be imported in an HTML document by using the &lt;link&gt; tag. Once the web font URL is placed within the href attribute, the importd font can then be used in the CSS declaration</li>
             </ul>
+            <br>
+            <h2>Colors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th-css">Color Type</th>
+                        <th class="'th-css">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="property">Color</td>
+                        <td class="description">Can be used to set color property values for elements in CSS.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">Alpha Values</td>
+                        <td class="description">Determines the <strong>transparency</strong> of colors in CSS. Alpha values can be set for both RGB and HSL colors by using rgba() and hsla() and providing a fourth value representing alpha. Alpha values can range between 0.0 (totally transparent) and 1.0 (totally opaque). The CSS transparent value can also be used to create a fully transparent element.</td>
+                    </tr>
+                    <tr>
+                      <td class="property">Hexadecimal Colors</td>
+                      <td class="description">Colors can be represented in hexadecimal (or hex) notation. Hexadecimal digits can represent 16 different values usimg <strong>0-9 and a-f</strong>. Hexadecimal colors are composed of <strong>6 characters</strong> - each group of two represents a value between <strong>0 and 255 for red, green or blue</strong>. For example, #ff0000 is all red, no green and no blue. When both characters of all 3 colors are <strong>repeated</strong>, hex colors can be abbreviated to only <strong>3 values</strong>, so #0000ff could also be represented as #00f.</td>
+                    </tr>
+                    <tr>
+                      <td class="property">HSL Colors</td>
+                      <td class="description">Colors can be declared with the HSL color system using hsl() syntax. This system contains 3 values: <strong>hue (the color value itself), saturation (intensity) and lightness</strong>. Hue values range from <strong>0 to 360</strong> while saturation and lightness values are represented as <strong>percentages</strong>.</td>
+                    </tr>
+                    <tr>
+                      <td class="property">RGB() Colors</td>
+                      <td class="description">Colors can be decalared with RGB colors using rgb() syntax. Should be supplied with <strong>3 values representing red, green and blue</strong>. These values range from <strong>0 to 255</strong>.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h2>Color Wheel</h2>
+            <img src="hsl-color-wheel.png" alt="color wheel" class="wheel">
         </body>
     </html>
