@@ -536,5 +536,111 @@
                 </tr>
               </tbody>
             </table>
+            <br>
+            <h2>Display and Positioning</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Property</th>
+                  <th class="th-css">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                <td class="property">display</td>
+                <td class="description">Determines the type of render block for an element. The most common values are block, inline and inline-block. <strong>Block</strong>: elements take up the <strong>full width</strong> of their container with <strong>line breaks</strong> before and after and can have their height and width <strong>manually adjusted</strong>. <strong>Inline</strong>: elements take up <strong>as little space as possible, flow horizontally and cannot have their height or width manually adjusted</strong>. <strong>Inline block</strong>: elements can appear <strong>next to each other</strong> and can have their width and height <strong>manually adjusted</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">z-index</td>
+                  <td class="description">Specifies how far <strong>back or forward</strong> an element will appear on a web page when it <strong>overlaps</strong> other elements. It uses <strong>integer values</strong> which can be <strong>positive or negative</strong>. The element with the <strong>highest</strong> z-index will be at the <strong>foreground</strong> and the element with the <strong>lowest</strong> z-index will be at the <strong>back</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">position</td>
+                  <td class="description">Positioning in CSS provides designers and developers options for positioning HTML elememts on a web page. It can be set to static, relative, absolute or fixed. <strong>Fixed</strong>: set/pinned to a specific spot on the page. It stays the same regardless of scrolling. The navigation bar is a great example of an element that is often set to fixed, where the user can scroll through the web page and still access the navigation bar. <strong>Absolute</strong>: enables an element to <strong>ignore</strong> sibling elements and instead be positioned <strong>relative to its closest parent</strong> element that is positioned with <strong>relative or absolute</strong>. The absolute value <strong>removes an element entirely from the document flow</strong>. Bu using the positioning attributes top, left, bottom amd right, an element can be positioned anywhere as expected. <strong>Relative</strong>: enables an element to be positioned relative to where it would have <strong>originally been on a web page</strong>. The offset properties can be used to determine the actual position of the element <strong>relative to its origninal position</strong>. Without the offset properties, this declaration will have no effect on its positioning, it will act as the default value static of the position property.</td>
+                </tr>
+                <tr>
+                  <td class="property">float</td>
+                  <td class="description">Determines how far left or right an element should float within its parent element. Left floats an element to the left side of its container and right floats to the right side of the container. For the property float, the <strong>width of the container must be specified</strong> or the element will assume the full width of its containing element.</td>
+                </tr>
+                <tr>
+                  <td class="property">clear</td>
+                  <td class="description">Specifies how an element should behave <strong>when it bumps into another element within the same containing element</strong>. It is usually used in <strong>combination with the float property</strong>. This determines on <strong>on which sides floating elements are allowed to float</strong>.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h2>Git and Publishing to Github Pages</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Command</th>
+                  <th class="th-css">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">git init</td>
+                  <td class="description">Creates or initializes a <strong>new Git project or <u>repository</u></strong>. It creates a .git folder with all the tools and data necessary to maintain versions. Only use this command once per project to complete the initial setup.</td>
+                </tr>
+                <tr>
+                  <td class="property">git status</td>
+                  <td class="description">Used within a Git repository to see its current status including the <strong>current commit, any modified files and any new files not being tracked by Gits</strong>. The output can vary widely and it often includes helpful messages to direct the user to manage their repository.</td>
+                </tr>
+                <tr>
+                  <td class="property">git diff</td>
+                  <td class="description">Displays the <strong>differences between the working directory and the staging area</strong> in one specific file. Use git diff filename before adding new content to ensure that you are making the changes you expect.</td>
+                </tr>
+                <tr></tr>
+                <td class="property">git log</td>
+                <td class="description">Shows all of the <strong>commit logs</strong> for a project. The following is displayed for each commit: 
+                <ul>
+                  <li>A 40 character code, called a SHA, that uniquely identifies the commit.</li>
+                  <li>The commit author.</li>
+                  <li>The date and time of the commit.</li>
+                  <li>The commit message.</li>
+                </ul>
+              This command is particularly useful when you need to refer back to an <strong>old version</strong> of your project. The <strong>unique SHA code</strong> allows you to identify a point in your program's history that you would like to revert to.</td>
+              </tr>
+              <tr>
+                <td class="property">git commit -m "log message here"</td>
+                <td class="description">Creates a new commit containing the <strong>current contents of the staging area and a log message describing the changes to the repository</strong>. It is the last step in the Git workflow. It <strong>permanently stores changes</strong> from the staging area inside the repository. It is almost always used with git add.</td>
+              </tr>
+              <tr>
+                <td class="property">git add</td>
+                <td class="description">Used to add the file changes to the staging area. After these changes have been staged, you can use git commit to permanently store the changes.</td>
+              </tr> 
+            </tbody>
+            </table>
+            <br>
+            <h2>Git Notes</h2>
+            <ul class="notes">
+              <li><strong>Git</strong> - A command line software that <strong>keeps track of changes made to a project over time</strong>. It works by <strong>recording the changes made to a project, storing those changes, then allowing a programmer to reference them as needed. All Git commands follow the pattern git &lt;git action&gt; and in order to use Git for a project, it must be first initialized using the git init command in the project's root directory.</li>
+              <ol>
+                <li>A Working Directory: where files are created, edited, deleted and organized.</li>
+                <li>A Staging Area: where changes that are made to the working directory are listed.</li>
+                <li>A Repository: where Git permanently stores changes as different versions of the project.</li>
+              </ol>
+              The Git workflow consists of <strong>editing</strong> files in the working directory, <strong>adding</strong> files to the staging area and <strong>saving</strong> changes to a Git repository.
+            </ul>
+            <br>
+            <h2>How to Create and Deploy a Website</h2>
+            <ol class="notes">
+              <li>In Mac Terminal:</li>
+              <ul>
+                <li>cd Desktop</li>
+                <li>mkdir project name</li>
+                <li>cd project name</li>
+                <li>touch index.html</li>
+                <li>touch style.css</li>
+                <li>git init</li>
+              </ul>
+              <li>Open Visual Studio Code 2</li>
+              <li>Open project name folder</li>
+              <li>Make sure current working directory is project name: pwd</li>
+              <li>Add HTML and CSS files to staging area: git add . Make first commit with a message: git commit -m "init commit"</li>
+              <li>Set up GitHub repository - HTTPS. Copy and paste push from existing ... to Mac terminal. Refresh repository web page.</li>
+              <li>Final push - git push</li>
+              <li>Go to GitHub Pages - deploy site from main branch.</li>
+            </ol>
         </body>
     </html>
