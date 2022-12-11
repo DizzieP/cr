@@ -410,5 +410,40 @@
             <br>
             <h2>Color Wheel</h2>
             <img src="hsl-color-wheel.png" alt="color wheel" class="wheel">
+            <br>
+            <h2>The Box Model</h2>
+            <table>
+              <thead>
+                <tr>
+                <th class="th-css">Property</th>
+                <th class="th-css">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">overflow</td>
+                  <td class="description">If content is too large for its container, the CSS overflow property will determine how the browser handles the problem. By default, it is set to visible and the content will take up <strong>extra space</strong>. It can be set to hidden or scroll, which makes the overflowing content accessible via scroll bars within the original container.</td>
+                </tr>
+                <tr>
+                  <td class="property">visibility</td>
+                  <td class="description">Used to render hidden objects invisible to the user, without removing them from the page. This ensures that the page structure and organization remain unchanged.</td>
+                </tr>
+                <tr>
+                  <td class="property">box-sizing</td>
+                  <td class="description">The CSS box model is a box that wraps around an HTML element and controls the design and layout. The box-sizing controls which aspect of the box is determined by the height and width properties. The default value of this property is <strong>content-box</strong>, which renders the actual size of the element including the content box, but <strong>not the paddings and borders</strong>. The value <strong>border-box</strong> renders the actual size of an element including the <strong>content box, paddings and borders</strong>.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h2>The Box Model Notes</h2>
+            <ul class="notes">
+              <li><strong>Auto Keyword</strong> - Auto can be used with the property <strong>margin</strong> to <strong>horizontally center</strong> an element within its container. The margin property will take the width of the element and will split the rest of the space equally between the left and right margins.</li>
+              <li><strong>Height and Width Maximums/Minimums</strong> - The CSS min-width and min-height properties can be used to set a minimum width and minimum height of an element's box. Max-width and max-height properties can be used to set maximum widths and heights for element boxes.</li>
+              <li><strong>Margin Collapse</strong> - Occurs when the top and bottop margins of blocks re comnined into a single margin <strong>equal to the largest individual block margin</strong>. Margin collapse only occurs with <strong>vertical margins, not for horizontal margins</strong>.</li>
+            </ul>
+            <br>
+            <h2>The Box Model Diagram</h2>
+            <img src="the box model.png" alt="A diagram of The Box Model" class="model">
+
         </body>
     </html>
