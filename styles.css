@@ -64,6 +64,10 @@ body {
     width: 800px;
     background-color: #CF9FFF;
     text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   .selector {
@@ -112,6 +116,7 @@ body {
       width: 50%;
       border: 3px solid hotpink;
       border-radius: 10px;
+      box-shadow: 5px 5px purple;
     }
 
     .wheel {
@@ -121,6 +126,7 @@ body {
       width: 50%;
       border: 3px solid hotpink;
       border-radius: 10px;
+      box-shadow: 5px 5px purple;
     }
 
     .model {
@@ -130,8 +136,129 @@ body {
       width: 50%;
       border: 3px solid hotpink;
       border-radius: 10px;
+      box-shadow: 5px 5px purple;
     }
   
+    .direction {
+      display: block;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .items {
+      display: block;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .wrap {
+      display: block;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .justify {
+      display: block;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .content {
+      display: block;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .gap {
+      display: block;
+      width: 30%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .order {
+      display: block;
+      width: 30%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .grow {
+      display: block;
+      width: 30%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .self {
+      display: block;
+      width: 30%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
+    .flexbox {
+      display: block;
+      width: 30%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 3px solid hotpink;
+      border-radius: 10px;
+      box-shadow: 5px 5px purple;
+    }
+
     .property {
       width: 200px;
       background-color: hotpink;

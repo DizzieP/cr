@@ -642,5 +642,229 @@
               <li>Final push - git push</li>
               <li>Go to GitHub Pages - deploy site from main branch.</li>
             </ol>
+            <br>
+            <h2>Flexbox</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Property</th>
+                  <th class="th-css">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                <td class="property">flex-direction</td>
+                <td class="description">This establishes the main axis, defining the direction that flex items are placed in the flex container. Flexbox is (except for optional wrapping) a <strong>single-direction</strong> layout concept. The flex items are primarily laid out in either <strong>horizontal or vertical columns</strong>.  
+                <ul>
+                  <li><strong>row</strong>: left to right in ltr; right to left in rtl</li>
+                <li><strong>row-reverse</strong>: right to left in ltr; left to right in rtl</li>
+                <li><strong>column</strong>: same as row, but top to bottom</li>
+                <li><strong>column-reverse</strong>: same as row-reverse, but bottom to top</li></ul>
+              <img src="flex direction.jpeg" alt="diagram of flex-direction options" class="direction"></td>
+              </tr>
+              <tr>
+                <td class="property">flex-wrap</td>
+                <td class="description">By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+                  <ul>
+                    <li><strong>nowrap</strong>: default, all flex items will be on one line</li>
+                    <li><strong>wrap</strong>: flex items will wrap onto <strong>multiple lines from top to bottom</strong></li>
+                    <li><strong>wrap-reverse</strong>: flex items will wrap onto multiple lines from <strong>bottom to top</strong></li>
+                  </ul>
+                  <img src="flex wrap.jpeg" alt="Flex wrap diagram" class="wrap">
+                </td>
+              </tr>
+              <tr>
+                <td class="property">flex-flow</td>
+                <td class="description">This is a shorthand for flex-direction and flex-wrap, which together define the flex container's <strong>main and cross axes (horizontal and vertical)</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td class="property">justify-content</td>
+                <td class="description">This defines the <strong>alignment along the main axis</strong>. It helps <strong>distribute extra free space leftover</strong> when either all the flex items on a line are <strong>inflexible</strong>, or are <strong>flexible</strong> but have reached their maximum size. It also exerts some <strong>control</strong> over the alignment of items when they overflow the line.
+                <ul>
+                  <li><strong>flex-start</strong>: default, items are packed towards the <strong>start</strong> of the flex-direction.</li>
+                  <li><strong>flex-end</strong>: items are packed towards the <strong>end</strong> of the flex-direction.</li>
+                  <li><strong>center</strong>: items are <strong>centered</strong> along the line.</li>
+                  <li><strong>space-between</strong>: items are <strong>evenly distributed</strong> in the line, first item is on the <strong>start</strong> line, last item on the <strong>end</strong> line.</li>
+                  <li><strong>space-around</strong>: items are <strong>evenly distributed</strong> in the line with <strong>equal space around them</strong>. Note, visually the spaces aren't equal, since all the items have equal space on both sides. The first items will have <strong>one unit of space<strong> against the container edge, but <strong>two units of space</strong> between the next item as that next item has its own spacing that applies.</li>
+                  <li><strong>space-evenly</strong>: items are distributed so that the spacing between any two items (and the space to the edges) is <strong>equal</strong>.</li>
+                </ul>
+                <img src="justify content.jpeg" alt="Justify content diagram" class="justify">
+                </td>
+              </tr>
+              <tr>
+                <td class="property">align-items</td>
+                <td class="description">This defines the default behavior for how flex items are laid out along the <strong>cross axis</strong> on the current line. It is the <strong>justify-content version for the cross-axis (vertical axis - perpendicular to the horizontal axis).</strong>
+                <ul>
+                  <li><strong>stretch</strong>: default, stretches to <strong>fill the container</strong>, but still respects the min-width and max-width.</li>
+                  <li><strong>flex-start</strong>:  items are placed at the <strong>start of the vertical axis</strong>.</li>
+                  <li><strong>flex-end</strong>: items are placed at the <strong>end of the vertical axis</strong>.</li>
+                  <li><strong>center</strong>: items are <strong>centered in the vertical axis</strong>.</li>
+                  <li><strong>baseline</strong>: items are aligned, such as their baselines align.</li>
+                </ul>
+                <img src="align items.jpeg" alt="Align items diagram" class="items">
+              </td>
+              </tr>
+              <tr>
+                <td class="property">align-content</td>
+                <td class="description">This aligns a flex container's <strong>lines</strong> within when there is extra space in the vertical axis. This only takes effect on <strong>multi-line flexible containers, where flex-wrap is either set to <strong>wrap or wrap-reverse</strong>. A single line will not work with align-content.
+                <ul>
+                  <li><strong>flex-start</strong>: items are packed to the <strong>start</strong> of the container.</li>
+                  <li><strong>flex-end</strong>: items are packed to the <strong>end</strong> of the container.</li>
+                  <li><strong>center</strong>: items are <strong>centered</strong> in the container.</li>
+                  <li><strong>space-between</strong>: items are <strong>evenly distributed. The first line is at the <strong>start</strong> of the container, while the last one is at the <strong>end</strong>.</li>
+                  <li><strong>space-around</strong>: items are evenly distributed with <strong>equal space around each line</strong>.</li>
+                  <li><strong>stretch</strong>: lines <strong>stretch</strong> to take up the <strong>remaining space</strong>.</li>
+                  <li><strong>space-evenly</strong>: items are evenly distributed with <strong>equal space around them</strong>.</li>
+                </ul>
+                <img src="align content.jpeg" alt="Align content diagram" class="content">
+              </td>
+              </tr>
+              <tr>
+                <td class="property">gap</td>
+                <td class="description">Explicitly controls the <strong>space between flex items</strong>. It works only between items, <strong>not on the outer edges</strong>. The behavior could be thought of as a <strong>minimum gutter</strong>, where if the gutter is bigger because of justify-content or space-between, then the gap will only take effect if that space would end up <strong>smaller</strong>.
+                <ul>
+                  <li><strong>gap</strong></li>
+                  <li><strong>row-gap</strong></li>
+                  <li><strong>column-gap</strong></li>
+                </ul>
+                <img src="gap.jpeg" alt="Gap diagram" class="gap">
+              </td>  
+              </tr>
+              <tr>
+                <td class="property">order</td>
+                <td class="description">Flex items are laid out in the source order by default. The order property controls the <strong>order</strong> in which they appear in the flex container.
+                <img src="order.jpeg" alt="Order diagram" class="order">
+              </td>
+              </tr>
+              <tr>
+                <td class="property">flex-grow</td>
+                <td class="description">This defines the ability for a flex item to <strong>grow</strong>, if necessary. It accepts a <strong>unitless value that serves as a proportion</strong>. It dictates what amount of the available space inside the flex container the item should take up. If all items have flex-grow set to 1, the remaining space will be distributed <strong>equally</strong> to all children. If one child has a value of 2, that child would take up <strong>twice</strong> as much of the space of either one of the others (or it will try, at least). Negative numbers are invalid.
+                <img src="flex grow.jpeg" alt="Flex grow diagram" class="grow">
+              </td>
+              </tr>
+              <tr>
+                <td class="property">flex-shrink</td>
+                <td class="description">This defines the ability for a flex item to <strong>shrink</strong>, if necessary. Negative numbers are invalid.</td>
+              </tr>
+              <tr>
+                <td class="property">flex-basis</td>
+                <td class="description">This defines the <strong>default size</strong> of an element before the remaining space is distributed. It can be a <strong>length</strong> (e.g. 20%, 5rem, etc.) or a <strong>keyword</strong>. The <strong>auto keyword</strong> means "look at my width or height property". The <strong>content keyword</strong> means "size it based on the item's content" (not well supported). If set to auto, the extra space around content isn't factored in. If set to auto, the extra space is distributed based on its <strong>flex-grow</strong> value.</td>
+              </tr>
+              <tr>
+                <td class="property">align-self</td>
+                <td class="description">This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. Please see the align-items explanation to understand the available values.
+                  <img src="align self.jpeg" alt="Align self diagram" class="self">
+                </td>
+              </tr>
+              <tr>
+                <td class="property">flex</td>
+                <td class="description">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters are optional. The default is <strong>0 1 auto</strong>, but if you set it with a single number like 5, that changes the flex-basis to 0%, so it's like setting flex-grow: 5; flex-shrink: 1; flex-basis: 0%;</td>
+              </tr>
+            </tbody>
+            </table>
+            <br>
+            <h2>Flexbox Notes</h2>
+            <ul class="notes">
+              <li>Flexbox is a <strong>whole module</strong> and not a single property. There is the container (parent element) and others are meant to be set on the children (flex items).</li>
+              <li>Items are laid out on either the horizontal or vertical axis.</li>
+              <li><strong>main axis</strong>: The primary axis which flex items are laid out. It is not necessarily horizontal.</li>
+              <li><strong>main-start | main-end</strong>: The flex items are placed within the container starting from main-start and going to main-end.</li>
+              <li><strong>main-size</strong>: A flex item's width or height , whichever is in the main dimension, is the item's main size. The flex item's main size property is either the "width" or "height" property, whichever is in the main dimension.</li>
+              <li><strong>cross axis</strong>: The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.</li>
+              <li><strong>cross-start | cross-end</strong>: Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
+              <li><strong>cross size</strong>: The width or height fo a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of "width" or "height" that is in the cross dimension.</li>
+            </ul>
+            <br>
+            <h2>Flexbox Diagram</h2>
+            <img src="flexbox diagram.jpeg" alt="Flexbox diagram" class="flexbox">
+            <br>
+            <h2>Links and Buttons</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Link/Button Data</th>
+                  <th class="th-css">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Signifiers</td>
+                  <td class="description"><strong>Indicators</strong> that offer clues about how to interact with <strong>new objects</strong> or <strong>situations</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">User Agent Stylesheet</td>
+                  <td class="description">A set of <strong>default styles</strong> included in the browser for use on all web pages.</td>
+                </tr>
+                <tr>
+                  <td class="property">Links and Button Behavior</td>
+                  <td class="description">Should exhibit the <strong>same behavior</strong> across <strong>different browsers</strong> to consistently maintain the <strong>same experience</strong> for all users.</td>
+                </tr>
+                <tr>
+                  <td class="property">Link States</td>
+                  <td class="description">In a browser, links have 4 main states:
+                    <ol>
+                      <li>normal (not clicked)</li>
+                      <li>hover</li>
+                      <li>active (clicked)</li>
+                      <li>visited</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property">Link Styles</td>
+                  <td class="description">Links should be styled in a <strong>different way</strong> from their surrounding text. By default, links appear <strong>blue and underlined</strong> in contrast to the surrounding black text.</td>
+                </tr>
+                <tr>
+                  <td class="property">Anchor Text</td>
+                  <td class="description">The text <strong>inside</strong> of a link and is <strong>descriptive</strong> of the linked <strong>resource</strong>. It improves: 
+                  <ul>
+                    <li>usability</li>
+                    <li>accessibility</li>
+                    <li>search engine optimization</li>
+                  </ul> </td>
+                </tr>
+                <tr>
+                  <td class="property">title</td>
+                  <td class="description">The title attribute can be provided to <strong>any</strong> HTML element. This attribute is used for <strong>additional context</strong> or <strong>advisory</strong> text for <strong>clickable elements</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">Tooltips</td>
+                  <td class="description">A tooltip is a <strong>descriptive box</strong> which contains the text of an element's <strong>title attribute</strong> and appears near the <strong>user's cursor</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">:hover CSS Pseudo-Class</td>
+                  <td class="description">Used to style an element when the <strong>mouse cursor hovers</strong> over it.</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS cursor Property</td>
+                  <td class="description">Used to <strong>change the appearance</strong> of the mouse cursor when <strong>hovering</strong> over an element.</td>
+                </tr>
+                <tr>
+                  <td class="property">Skeuomorphism</td>
+                  <td class="description">The concept of replicating or imitating <strong>real life</strong> counterparts with UI elements.</td>
+                </tr>
+                <tr>
+                  <td class="property">Flat Design</td>
+                  <td class="description">Uses <strong>simplicity</strong> and <strong>lack of clutter</strong> for its UI elements.</td>
+                </tr>
+                <tr>
+                  <td class="property">Button Skeuomorphic Styling</td>
+                  <td class="description">A &lt;button&gt; element can incorporate skeuomorphic styling for a <strong>realistic 3D appearance</strong>. When pressing the button, a <strong>texture change</strong> may occur to make the button appear to <strong>flatten and pop back up when released</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">Button Flat Styling</td>
+                  <td class="description">A &lt;button&gt; element can incorporate flat styling for a simple <strong>2D effect</strong>. When pressing the button, a <strong>color change</strong> may occur as a signifier that the button has been pressed.</td>
+                </tr>
+                <tr>
+                  <td class="property">Button Hover State</td>
+                  <td class="description">A button can have a <strong>hover state</strong> that changes the <strong>appearance</strong> of a cursor when it is <strong> directly over the button</strong>.</td>
+                </tr>
+                <tr>
+                  <td class="property">Mobile Device Hover State</td>
+                  <td class="description">The hover state of buttons and links <strong>does not apply to mobile devices</strong> due to the <strong>lack of a cursor</strong>.</td>
+                </tr>
+              </tbody>
+            </table>
         </body>
     </html>
