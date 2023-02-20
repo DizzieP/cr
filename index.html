@@ -867,6 +867,122 @@
               </tbody>
             </table>
             <br>
+            <h2>CSS: Grid</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Attribute</th>
+                  <th class="th-css">Description</th>
+                  <th class="th-css">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Grid Template Columns</td>
+                  <td class="description">To specify the number of columns of the grid and the widths of each column, the CSS property grid-template-columns is used on the grid container. The number of width values determines the number of columns and each width value can be either in pixels (px) or percentages (%).</td>
+                  <td class="example">#grid-container {<br>display: grid;<br>width: 100px;<br>grid-template-columns: 20px 20% 60%;<br>]</td>
+                </tr>
+                <tr>
+                  <td class="property">fr Relative Unit</td>
+                  <td class="description">The CSS grid relative sizing unit fr is used to split rows and/or columns into proportional distanes. Each fr unit is a fraction of the grid's overalll length and width. If a fixed unit is used along with fr (like pixels for example), then the fr units will only be proportional to the distance left over.</td>
+                  <td class="example">/*<br>In this example, the second column take s 60px of the available 100px so the first and third columns split the remaining available 40px into two parts (`1fr` = 50% or 20px)<br>*/<br>.grid {<br>display: grid;<br>width: 100px;<br>grid-template-columns: 1fr 60px 1fr;<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Grid Gap</td>
+                  <td class="description">The CSS grid-gap prperty is a shorthand way of setting the teo properties grid-row-gap and grid-column-gap. It is used to deermine the size of the gap between eah row and each column. The first value sets the size of the gap between rows and while the second value sets the size of the gap between columns.</td>
+                  <td class="example">// The distance between rows is 20px<br>// The distane between columns is 10px<br>#grid-container {<br>display: grid;<br>grid-gap: 20px 10px;<br>]</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS Block Level Grid</td>
+                  <td class="description">CSS Grid is a two-dimensional CSS layout system. To set an HTML element into a block-level grid container use display: grid property/value. The nested elements inside this element are called grid items.</td>
+                  <td class="example">#grid-container {<br>display: grid</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-row</td>
+                  <td class="description">The CSS grid-row property is shorthand for the grid-row-start and grid-row-end prperties specifying a grid item's size and location within the grid row. The starting and ending row values are separated bya /. There is a corresponding grid-column property shorthand that implements the same behavior for columns.</td>
+                  <td class="example">/* CSS Syntax */<br>grid-row: grid-row-start / grid-row-end;<br>/* Example */<br>.item {<br>grid-row: 1 / span 2;<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS Inline Level Grid</td>
+                  <td class="description">CSS Grid is a two-dimensional CSS layout system. To set an HTML element into a inine-level grid container use display: inline-grid property/value. The nested elements inside this element are called grid items. The difference between the values inline-grid and grid is that the inline-grid will make the element inline while grid will make it a block-level element.</td>
+                  <td class="example">#grid-contaienr {<br>display: inline-grid;<br>]</td>
+                </tr>
+                <tr>
+                  <td class="property">minmax() Function</td>
+                  <td class="description">The CSS Grid minmax() function accepts two parameters:<br>
+                  <ul>
+                    <li>The first parameter is the minimum size of a row or column.</li>
+                    <li>The second parameter is the maximum size.</li>
+                  </ul><br>
+                The grid must have a variable width for the minmax() function. If the maximum value is less than the minimum, then the maximum value is ignored and only the minimum value is used. The function can be used in the values of the grid-template-rows, grid-template-columns and grid-template properties.</td>
+                <td class="example">/* In this example, the second column will vary in size between 100px and 500px depending on the size of the web browser. */<br>.grid {<br>display: grid;<br>grid-template-columns: 100px minmax(100px, 500px) 100px;<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">grid-row-start & grid-row-end</td>
+                  <td class="description">The CSS grid-row-start and grid-row-end properties allow single grid items to take up multiple rows. The grid-row-start property defines on which row-line the item will start. The grid-row-end property defines how many rows an item will span, or on which row-line the item will end. The keyword span can be used with either property to automatically calculate the ending value from the starting value or vice versa. There are complementary grid-column-start and grid-column-end properties that apply the same behavior to columns.</td>
+                  <td class="example">/* CSS syntax: grid-row-start: auto|row-line; grid-row-end: auto|row-line|span n; */<br>grid-row-start: 2;<br>grid-row-end: span 2;</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-row-gap</td>
+                  <td class="description">The CSS grid-row-gap property determines the amount of blank space between each row in a CSS grid layout or in other words, sets the size of the gap (gutter) between an element's grid rows. The grid-column-gap provides the same functionality for space between grid columns.</td>
+                  <td class="example">/* CSS Syntax */<br>grid-row-gap; length; /* Any legal length value, like px or %. 0 is the default value. */</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-area</td>
+                  <td class="description">The CSS grid-area property specifies a grid item's size and location in a grid layout and is a shorthand property for the grid-row-start, grid-column-start, grid-row-end, grid-column-end in that order. Each value is separated by a /. In the included example, Item1 will start on row 2 and column 1, and span 2 rows and 3 columns.</td>
+                  <td class="example">.item1 {<br>grid-area: 2 / 1 / span 2 / span 3;<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Justify Items</td>
+                  <td class="description">The justify-items property is used on a grid container. It's used to determine how the grid items are spread out along a row by setting the default jusify-self property for all child boxes. The value start aligns grid items to the left side of the grid area. The value end aligns grid itmes to the right side of the grid area. The value center aligns grid items to the center of the grid area. The value stretch stretches all items to fill the grid area.</td>
+                  <td class="example">#container<br>display: grid;<br>justify-items: center;<br>grid-template-columns: 1fr;<br>grid-template-rows: 1fr 1fr 1fr;<br>grid-gap: 10px;</td>
+                </tr>
+                <tr>
+                  <td class="property">Align Self</td>
+                  <td class="description">The CSS align-self property is used to set how an individual grid item positions itself along the column or block axis. By default grid items inherit the value of the align-items property on the container. So if the align-self value is set, it would over-ride the inherited align-items value. The value start positions grid items on the top of the grid area. The value end aligns the grid on the bottom of the grid area. The value center positions grid items on the center of the grid area. The value stretch positions grid items to fill the grid area (default).</td>
+                  <td class="example"></td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-template-areas</td>
+                  <td class="description">The CSS grid-template-areas property allows the naming of sections of a webpage to use as values in the grid-row-start, grid-row-end, grid-column-start, grid-column-end and grid-area properties. They specify named grid areas within a CSS grid.</td>
+                  <td class="example">/* Specify two rows, where "item" spans the first two columns in the first two rows (in a four column grid layout) */<br>.item {<br>grid-area: nav;<br>}<br>.grid-container {<br>display: grid;<br>grid-template-areas:<br>'nav nav . .'<br>'nav nav . .'<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-auto-flow</td>
+                  <td class="description">The CSS grid-auto-flow property specifies whether implicity-added elements should be added as rows or columns within a grid or, in other words, it controls how auto-placed items get inserted in the grid and this property is declared on the grid container. The value row specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default). The value column specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements. The value dense invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added.</td>
+                  <td class="example">/* CSS Syntax */<br>grid-auto-flow: row|column|dense|row dense|column dense;</td>
+                </tr>
+                <tr>
+                  <td class="property">Justify Content</td>
+                  <td class="description">Sometimes the total size of the grid items can be smaller than the grid container. If this is the case, the CSS property justify-content cna be used to position the entire grid along the row or inline axis of the grid container. The value start aligns the grid to the left side of the grid container. The value end aligns the grid to the right side of the grid container. The value center centers the grid horizontally in the grid container. The value stretch stretches the grid items to increase the ize of the grid to expand horizontally across the container. The value space-around includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element. The value space-between includes an equal amount of space between grid items and no space at either end. The value space-evenly places an even amount of space between grid items and at either end.</td>
+                  <td class="example"></td>
+                </tr>
+                <tr>
+                  <td class="property">Align Content</td>
+                  <td class="description">Some times the total size of the grid items can be smaller than the grid container. If this is the case, the CSS property align-content can be used to position the entire grid along the column axis of the grid container. The property is declared on the grid container. The value start aligns the grid to the top of the grid container. The value end aligns the grid to the bottom of the grid container. The value center centers the grid vertically in the grid container. The value stretch stretches the grid items to increase the size of the grid to expand vertically across the container. The value space-around includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is befoere the first and after the last element. The value space-between includes an equal amount of space between grid items and no space at either end. The value space-evenly places an even amount of space between grid items and at either end.</td>
+                  <td class="example"></td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-auto-rows (implicit)</td>
+                  <td class="description">The CSS grid-auto-rows property specifies the height of implicitly added grid rows or it sets a size for the rows in a grid container. This property is declared on the grid container. grid-auto-columns provides the same functionality for columns. Implicitly-added rows or columns occur when there are more grid items than cells available.</td>
+                  <td class="example"></td>
+                </tr>
+                <tr>
+                  <td class="property">Justify Self</td>
+                  <td class="description">The CSS justify-self property is used to set how an individual grid itempositions itself along the row or inine axis. By default grid items inherit the value of the justify-items property on the container. So if the justify-self value is set, it would over-ride the inherited justify-items value. The value start positions grid items on the left side of the grid area. The value end positions the grid items on the right side of the grid area. The value center positiond grid items on the center of the grid area. The value stretch positions grid items to fill the grid area (default).</td>
+                  <td class="example">// The grid items are positioned to the right (end) of the row.<br>#grid-container {<br>display: grid;<br>justify-items: start;<br>}<br>.grid-items {<br>justify-self: end;<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">CSS grid-area</td>
+                  <td class="description">The CSS grid-area property allows for elements to overlap each other by using the z-index property on a particular element which tells the browser to render that element on top of the other elements.</td>
+                </tr>
+                <tr>
+                  <td class="property">Align Items</td>
+                  <td class="description">The align-items property is used on a grid container. It's used to determine how the grid items are spread out along the column by setting the default align-self property for all child grid items. The value start aligns grid items to the top side of the grid area. The value end aligns grid items to the bottom side of the grid area. The value center aligns grid items to the center of the grid area. The value stretch stretches all items to fill the grid area.</td>
+                  <td class="example">#container {<br>display: grid;<br>align-items: start;<br>grid-template-columns: 1fr;<br>grid-template-rows: 1fr 1fr 1fr;<br>grid-gap: 10px;<br>}</td>
+                </tr>
+              </tbody>
+            </table>
             <h2>JavaScript Syntax: Introduction</h2>
             <table>
               <thead>
@@ -1091,6 +1207,7 @@
               </tbody>
             </table>
             <br>
+            <h2>JavaScript Syntax: Conditionals</h2>
             <table>
               <thead>
                 <tr>
@@ -1209,6 +1326,49 @@
                   <td class="property">Global Variables</td>
                   <td class="description">JavaScript variables that are declared outside of blocks or functions can exist in the global scope, which means they are accessible throughout a program. Variables declared outside of smaller block or function scopes are accessible inside those smaller scopes. Note: It is best practice to keep global variables to a minimum.</td>
                   <td class="example">// Variable declared globally<br>const color = blue;<br>function printColor() {<br>console.log(color);<br>}<br>printColor(); // Prints: blue</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h2>JavaScript Syntax: Arrays</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Attribute</th>
+                  <th class="th-css">Description</th>
+                  <th class="th-css">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Arrays</td>
+                  <td class="description">Arrays are lists of ordered, stored data. They can hold items that are of any data type. Arrays are created by using square brackets, with individual elements separated by commas.</td>
+                  <td class="example">// An array containing numbers<br>const numberArray = [0, 1, 2, 3];<br>// An array containing different data types<br>const mixedArray = [1, 'chicken', false];</td>
+                </tr>
+                <tr>
+                  <td class="property">Property.length</td>
+                  <td class="description">The .length property of a JavaScript array indicates the number of elements the array contains.</td>
+                  <td class="example">const numbers = [1, 2, 3, 4];<br>numbers.length // 4</td>
+                </tr>
+                <tr>
+                  <td class="property">Index</td>
+                  <td class="description">Array elements are arranged by index values, starting at 0 as the first element index. Elements can be accessed by their index using the array name, and the index surrounded by square brackets.</td>
+                  <td class="example">// Accessing an array element<br>const myArray = [100, 200, 300];<br>console.log(myArray[0]); // 100<br>console.log(myArray[1]); // 200<br>console.log(myArray[2]); // 300</td>
+                </tr>
+                <tr>
+                  <td class="property">Method.push()</td>
+                  <td class="description">The .push() method of JavaScript arrays can be used to add one or more elements to the end of an array. .push() mutates the original array and returns the new length of the array.</td>
+                  <td class="example">// Adding a single element:<br>const cart = ['apple', 'orange'];<br>cart.push('pear);<br>// Adding multiple elements:<br>const numbers = [1, 2];<br>numbers.push(3, 4, 5);</td>
+                </tr>
+                <tr>
+                  <td class="property">Method.pop()</td>
+                  <td class="description">The .pop() method removes the last element from an array and returns that element.</td>
+                  <td class="example">const ingredients = ['eggs', 'flour', 'chocolate'];<br>const poppedIngredient =<br>ingredients.pop(); // 'chocolate'<br>console.log(ingredients);<br>// ['eggs', 'flour']</td>
+                </tr>
+                <tr>
+                  <td class="property">Mutable</td>
+                  <td class="description">JavaScript arrays are mutable, meaning that the values they contain can be changed. Even if they are declared using const, the contents can be manipulated by reassigning internal values of using methods like .push() and .pop()</td>
+                  <td class="example">const names = ['Alice', 'Bob'];<br>names.push('Carl');<br>// ['Alice', 'Bob, 'Carl']</td>
                 </tr>
               </tbody>
             </table>
