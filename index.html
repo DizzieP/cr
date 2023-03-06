@@ -1372,5 +1372,63 @@
                 </tr>
               </tbody>
             </table>
+            <br>
+            <h2>JavaScript Syntax: Loops</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Attribute</th>
+                  <th class="th-css">Description</th>
+                  <th class="th-css">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">While Loop</td>
+                  <td class="description">The while loop creates a loop that is executed as long as as a specified condition evaluates to true. The loop will continue to run until the condition evaluates to false. The condition is specifed before the loop, and usually, some variable is incremented or altered in the while loop body to determine when the loop should stop.</td>
+                  <td class="example">while (condition) {<br>// code to be executed<br>}<br>let i = 0;<br>while (i &lt; 5) {<br>console.log(i);<br>i++;<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Reverse Loop</td>
+                  <td class="description">A for loop can iterate "in reverse" by initializing the loop variable to the starting value, testing for when the variable hits the ending value, and decrementing (subtracting from) the loop variable at each iteration.</td>
+                  <td class="example">const items = ['apricot', 'banana', 'cherry'];<br>for (let i = items.length - 1; i >= 0; i -= 1) {<br>console.log(`${i}. ${items[i]});<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Do...While Statement</td>
+                  <td class="description">A do...while statement creates a loop that executes a block of code once, checks if a condition is true, and then repeats the loop as long as the condition is true. They are used when you want the code to always execute at least once. The loop ends when the condition evaluates to false.</td>
+                  <td class="example">x = 0<br>i = 0<br>do {<br>x = x + i;<br>console.log(x)<br>i++;<br>} while (i &lt; 5);<br>//Prints: 0 1 3 6 10</td>
+                </tr>
+                <tr>
+                  <td class="property">For Loop</td>
+                  <td class="description">A for loop declares looping instructions, with three important pieces of information separated by semicolons:<br>
+                  <ul>
+                    <li>The <strong>initialization</strong> defines where to begin the loop by declaring (or referencing) the iterator variable</li>
+                    <li>The <strong>stopping condition</strong> determines when to stop looping (when the expression evaluates to false)</li>
+                    <li>The <strong>iteration statement</strong> updates the iterator each time the loop is completed.</li>
+                  </ul></td>
+                  <td class="example">for (let i = 0; i &lt; 4; i += 1) {<br>console.log(i);<br>};<br>//Output: 0, 1 , 2, 3</td>
+                </tr>
+                <tr>
+                  <td class="property">Looping Through Arrays</td>
+                  <td class="description">An array's length can be evaluated with the .length property. This is extremely helpful for looping through arrays, as the .length of the array can be used as the stopping condition in the loop.</td>
+                  <td class="example">for (let i = 0; i &lt; array.length; i++){<br>console.log(array[i]);<br>}<br>//Output: every item in the array</td> 
+                </tr>
+                <tr>
+                  <td class="property">Break Keyword</td>
+                  <td class="description">Within a loop, the break keyword may be used to exit the loop immediately, continuing execution after the loop body. Here, the break keyword is used to exit the loop when i is greater than 5.</td>
+                  <td class="example">for (let i = 0; i &lt; 99; i += 1) {<br>if (i &gt; 5) {<br>break;<br>}<br>console.log(i)<br>}<br>// Output: 0 1 2 3 4 5</td>
+                </tr>
+                <tr>
+                  <td class="property">Nested for Loop</td>
+                  <td class="description">A nested for loop is when a for loop runs inside another for loop. The inner loop will run all its iterations for each iteration of the outer loop.</td>
+                  <td class="example">for (let outer = 0; outer &lt; 2; outer += 1) {<br>for (let inner = 0; inner &lt; 3; inner += 1) {<br>console.log(`${outer}-${inner}`);<br>}<br>}<br>/* Output:<br>0-0<br>0-1<br>0-2<br>1-0<br>1-1<br>1-2<br>*/</td>
+                </tr>
+                <tr>
+                  <td class="property">Loops</td>
+                  <td class="description">A loop is a programming tool that is used to repeat a set of instructions. Iterate is a generic term that means "to repeat" in the context of loops. A loop will continue to iterate until a specified condition, commonly known as a stopping condition, is met.</td>
+                  <td class="example"></td>
+                </tr>
+              </tbody>
+            </table>
         </body>
     </html>
