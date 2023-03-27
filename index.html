@@ -1430,5 +1430,168 @@
                 </tr>
               </tbody>
             </table>
+            <br>
+            <h2>Learn JavaSript Syntax: Objects</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Object Attribute</th>
+                  <th class="th-css">Description</th>
+                  <th class="th-css">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Dot Notation for Accessing Object Properties</td>
+                  <td class="description">Properties of a JavaScript object can be accessed using the dot notation in this manner: object.propertyName. Nested properties of an object can be accessed by chaining key names in the correct order.</td>
+                  <td class="example">const apple = {<br>color: 'Green',<br>price: {<br>bulk: '$3/kg',<br>smallQty: '$4/kg'<br>}<br>};<br>console.log(apple.color);// 'Green'<br>console.log(apple.price.bulk);// '$3/kg'
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property">Restrictions in Naming Properties</td>
+                  <td class="description">JavaScript object key names must adhere to some restrictions to be valid. Key names must either be strings or valid identifier or variable names (i.e. special characters such as - are not allowed in key names that are not strings).</td>
+                  <td class="example">//Example of invalid key names<br>const trainSchedule = {<br>platform num: 10, // Invalid because of the space between words.<br>40 - 10 + 2: 30, // Expressions cannot be keys.<br>+compartment: 'C' // The use of a + sign is invalid unless it is enclosed in quotations.<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Objects</td>
+                  <td class="description">An object is a built-in data type fro storing key-value pairs. Data inside objects are unordered, and the values can be of any type.</td>
+                  <td class="example"></td>
+                </tr>
+                <tr>
+                  <td class="property">Accessing non-existent JavaScript properties</td>
+                  <td class="description">When trying to access a JavaScript object property that has not been defined yet, the value of undefined will be returned by default.</td>
+                  <td class="example">const classElection = {<br>date: 'January 12'<br>};<br>console.log(classElection.place); // undefined</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript Objects are Mutable</td>
+                  <td class="description">JavaScript objects are mutable, meaning their contents can be changed, even when they are declared as const. New properties can be added, and existing property values can be changed or deleted. It is the reference to the object, bound to the variable, that cannot be changed.</td>
+                  <td class="example">const student = {<br>name: 'Sheldon',<br>score: 100,<br>grade: 'A',<br>}<br>console.log(student)<br>// { name: 'Sheldon', score: 100, grade: 'A' }<br>delete student.score<br>student.grade = 'F'<br>console.log(student)<br>// { name: 'Sheldon', grade: 'F' }<br>student = {}<br>// TypeError: Assignment to constant variable.</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript for...in loop</td>
+                  <td class="description">The JavaScript for...in loop can be used to iterate over the keys of an object. In each iteration, one of the properties from the object is assigned to the variable of that loop.</td>
+                  <td class="example">let mobile = {<br>brand: 'Samsung',<br>model: 'Galaxy Note 9'<br>};<br>for (let key in mobile) {<br>console.log(`${key}: ${mobile[key]}`);<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Properties and values of a JavaScript object</td>
+                  <td class="description">A JavaScript object literal is enclosed with curly braces {}. Values are mapped to keys in the object with a colon (:), and the key-value pairs are separated by commas. All the keys are unique, but values are not. Key-value pairs of an object are also referred to as properties.</td>
+                  <td class="example">const classOf2018 = {<br>students: 38,<br>year: 2018<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">Delete operator</td>
+                  <td class="description">Once an object is created in Javascript, it is possible to remove properties from the object using the delete operator. The delete keyword deletes both the value of the property and the property itself from the object. The delete operator only works on properties, not on variables or functions.</td>
+                  <td class="example">const person = {<br>firstName: "Matilda",<br>age: 27,<br>hobby: "knitting",<br>goal: "learning JavaScript"<br>};<br>delete person.hobby; // or delete person[hobby];<br>console.log(person);<br>/*<br>{<br>firstName: "Matilda"<br>age: 27<br>goal: "learning JavaScript"<br>}<br>*/</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript passing objects as arguments</td>
+                  <td class="description">When JavaScript objects are passed as arguments to functions or methods, they are passed by reference, not by value. This means that the object itself (not a copy) is accessible and mutable (can be changed) inside that function.</td>
+                  <td class="example">const origNum = 8;<br>const origObj = {color: 'blue'};<br>const changeItUp = (num, obj) =&lt; {<br>num = 7;<br>obj.color = 'red';<br>};<br>changeItUp(origNum, origObj);<br>// Will ouput 8 since integers are passed by value.<br>console.log(origNum);<br>// Will ouput 'red' since objects are passed by reference and are therefore mutable.<br>console.log(origObj.color);</td>
+                </tr>
+                <tr>
+                  <td class="property">Shorthand property name syntax for object creation</td>
+                  <td class="description">The shorthand property name syntax in JavaScript allows creating objects without explicitly specifying the property names (ie. explicitly declaring the value after the key). In this process, an object is creat4d where the property names of that object match variables which already exist in that context. Shorthand property names populate an object with a key matching the identifier and a value matching the identifier's value.</td>
+                  <td class="example">const activity = 'Surfing';<br>const beach = { activity };<br>console.log(beach); // { activity: 'Surfing' }</td>
+                </tr>
+                <tr>
+                  <td class="property">this Keyword</td>
+                  <td class="description">The reserved keyword this refers to a method's calling object, and it can be used to access properties belonging to that object. Here, using tht this keyword inside the object function to refer to the cat object and access its name property.</td>
+                  <td class="example">const cat = {<br>name: 'Pipey',<br>age: 8,<br>whatName() {<br>return ths.name<br>}<br>};<br>console.log(cat.whatName());<br>// Output: Pipey</td>  
+                </tr>
+                <tr>
+                  <td class="property">JavaScript function this</td>
+                  <td class="description">Every JavaScript function or method has a this context. For a function defined inside of an object, this will refer to that object itself. For a function defined outside of an object, this will refer to the global object (window in a browser, global in Node.js).</td>
+                  <td class="example">const restaurant = {<br>numCustomers: 45,<br>seatCapacity: 100,<br>availableSeats() {<br>// this refers to the restaurant object and it's used to access its properties<br>return this.seatCapacity - this.numCustomers;<br>}<br>}</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript Object Methods</td>
+                  <td class="description">JavaScript objects may have property values that are functions. These are referred to as object methods. Methods may be defined using anonymous arrow function expressions, or with shorthand method syntax. Object methods are invoked with the syntax: objectName.methodName(arguments).</td>
+                  <td class="example">const engine = {<br>// method shorthand, with one argument<br>start(adverb) {<br>console.log(`The engine starts up ${adverb}... );<br>},<br>// anonymous arrow function expression with no arguments<br>sputter: () =&gt; {<br>console.log('The engine sputters...');<br>},<br>};<br>engine.start('noisily');<br>engine.sputter();<br>/*Console output:<br>The engine starts up noisily...<br>The engine sputters...<br>*/</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript destructuring assignment shorthand syntax</td>
+                  <td class="description">The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values. It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.</td>
+                  <td class="example">const rubiksCubeFacts = {<br>possiblePermutations:<br>'43, 252, 003, 274, 489, 856, 000',<br>invented: '1974'<br>largestCube: '17x17x17'<br>};<br>const {possiblePermutations, invented,<br>largestCube} = rubiksCubeFacts;<br>console.log(possiblePermutations);<br>// '43, 252, 003, 274, 489, 856, 000'<br>console.log(invented); // '1974'<br>console.log(largestCube); // '17x17x17'</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript factory functions</td>
+                  <td class="description">A JavaScript function that returns an object is known as a factory function. Factory functions often accept parameters in order to customize the returned object.</td>
+                  <td class="example">// A factory function that accepts 'name',<br>// 'age', and 'breed' parameters to return<br>// a customized dog object.<br>const dogFactory = (name, age, breed) =&gt;<br>{<br>return {<br>name: name,<br>age: age,<br>breed: breed,<br>bark() {<br>console.log('Woof!');<br>}<br>};<br>};</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript getters and setters restricted</td>
+                  <td class="description">JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties. One way to implement more restricted interactions with object properties is to use getter and setter methods. Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore(_).</td>
+                  <td class="example">const myCat = {<br>_name: 'Dottie',<br>get name() {<br>return this._name;<br>},<br>set name(newName) {<br>this._name = newName;<br>}<br>};<br>// Reference invokes the getter<br>console.log(myCat.name);<br>// Assignment invokes the setter<br>myCat.name = 'Yankee';</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript Arrow Function this Scope</td>
+                  <td class="description">JavaScript arrow functions do not have their own this context, but use the this of the surrounding lexical context. THus, they are generally a poor choice for writing object methods. Consider the example code: loggerA is a property that uses arrow notation to define the function. Since data does not exist in this global context, accessing this.data returns undefined. loggerB uses method syntax. Since this refers to the enclosing obect, the value of the data property is accessed as expected, returning "abc".</td>
+                  <td class="example">const myObj = {<br>data: 'abc',<br>loggerA: () =&gt; {<br>console.log(this.data); },<br>loggerB() {console.log(this.data);<br>},<br>};<br>myObj.loggerA(): // undefined<br>myObj.loggerB(); // 'abc'</td>
+                </tr>
+                <tr>
+                  <td class="property">getters and setters intercept property access</td>
+                  <td class=description>JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.</td>
+                  <td class="example">const myCat = {<br>_name: 'Snickers',<br>get name(){<br>return this._name<br>},<br>set name(newName){<br>// Verify that newName is a non-empty string before setting as name property<br>if (typeof newName === 'string' &&<br>newName.length &gt; 0){<br>this._name = newName;<br>} else {<br>console.log("ERROR: name must be a non-empty string");<br>}<br>}<br>}</td>
+                </tr>  
+              </tbody>
+            </table>
+            <br>
+            <h2>Iterators</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-css">Iterator Attribute</th>
+                  <th class="th-css">Description</th>
+                  <th class="th-css">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="property">Function Assigned to Variables</td>
+                  <td class="description">In JavaScript, functions are a data type just as strings, numbers, and arrays are data types. Therefore, functions can be assigned as values to variables, but are different from all other data types because they can be invoked.</td>
+                  <td class="example">let plusFive = (number) =&gt; {<br>return number + 5;<br>};<br>// f is assigned the value of plusFive<br>let f = plusFive;<br>plusFive(3); // 8<br>// Since f has a function value, it can be invoked.<br>f(9); // 14</td>
+                </tr>
+                <tr>
+                  <td class="property">Callback Functions</td>
+                  <td class="description">In JavaScript, a callback function that is passed into another function as an argument. This function can then be invoked during the execution of that higher order function (that it is an argument of). Since, in JavaScript, functions are objects, functions can be passed as arguments.</td>
+                  <td class="example">const isEven = (n) =&gt; {<br>return n % 2 == 0;<br>}<br>let printMsg = (evenFunc, num) =&gt; {<br>const isNumEven = evenFunc(num);<br>console.log(`The number ${num} is an even number: ${isNumEven}.`)<br>}<br>// Pass in isEven as the callback function<br>printMsg(isEven, 4);<br>// Prints: The number 4 is an even number: True.</td>
+                </tr>
+                <tr>
+                  <td class="property">Higher-Order Functions</td>
+                  <td class="description">In JavaScript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well. A "higher-order function" is a function that accepts functions as parameters and/or returns a function.</td>
+                  <td class="example">const higherOrderFunc = param =&gt; {<br>param(),<br>return `I just invoked ${param.name} as a callback function!`<br>},<br>const anotherFunc = () =&gt; {<br>return 'I'm being invoked by the higher-order function!';<br>};<br>higherOrderFunc(anotherFunc);</td>
+                </tr>
+                <tr>
+                  <td class="property">JavaScript Functions: First-Class Objects</td>
+                  <td class="description">JavaScript functions are first-class objects. Therefore:<br>
+                    <ul>
+                      <li>They have built-in properties and methods, such as the name property and the .toString() method.</li>
+                      <li>Properties and methods can be added to them.</li>
+                      <li>They can be passed as arguments and returned from other functions.</li>
+                      <li>They can be assigned to variables, array elements, and other objects.</li>
+                    </ul></td>
+                  <td class="example">// Assign a function to a variable originalFunc<br>const originalFunc = (num) =&gt; {<br>return num + 2 };<br>// Re-assign the function to a new variable newFunc<br>const newFunc = originalFunc;<br>// Access the function's name property<br>newFunc.name; // 'originalFunc'<br>// Return the function's body as a string<br>newFunc.toString(); // '(num) =&gt; {<br>return num + 2 }'<br>// Add our own isMathFunction property to th function<br>newFunc.isMathFunction = true;<br>// Pass the function as an argument<br>const functionNameLength = (func) =&gt; {<br>return func.name.length };<br>functionNameLength(originalFunc); // 12<br>// Return the function<br>const returnFunc = () =&gt; {<br>return newFunc };<br>returnFunc(); // [Function: originalFunc]</td>
+                </tr>  
+                <tr>
+                  <td class="property">The .reduce() Method</td>
+                  <td class="description">The .reduce() method iterates through an array and returns a single value. In the above code example, the .reduce() method will sum up all the elements of the array. It takes a callback function with two parameters (accumulator, currentValue) as arguments. On each iteration, accumulator is the value returned by the last iteration, and the currentValue is the current element. Optionally, a second argument can be passed which acts as the initial value of the accumulator.</td>
+                  <td class="example">const arrayOfNumbers = [1, 2, 3, 4];<br>const sum =<br>arrayOfNumbers.reduce((accumulator, currentValue) =&gt; {<br>return accumulator + currentValue;<br>});<br>console.log(sum); // 10</td>
+                </tr>
+                <tr>
+                  <td class="property">The .forEach() Method</td>
+                  <td class="description">The .forEach() method executes a callback function on each of the elements in a an array in order. In the above example code, the callback function containing a console.log() method will be executed 5 times, once for each element.</td>
+                  <td class="example">const numbers = [28, 77, 45, 99, 27];<br>numbers.forEach(number =&gt; {<br>console.log(number);<br>});</td>
+                </tr>
+                <tr>
+                  <td class="property">The .filter() Method</td>
+                  <td class="description">The .filter() method executes a callback function on each element in an array. The callback function for each of the elements must return either true or false. The returned array is a new array with any elements for which the callback function returns true. In the above code example, the array filteredArray will contain all the elements of randomNumbers but 4.</td>
+                  <td class="example">const randomNumbers = [4, 11, 42, 14, 39];<br>const filteredArray = randomNumbers.filter(n =&gt; {<br>return n &gt; 5;<br>});</td>
+                </tr>
+                <tr>
+                  <td class="property">The .map() Method</td>
+                  <td class="descrition">The .map() method executes a callback function on each element in an array. It returns a new array made up of the return values from the callback function. The original array does not get altered, and the returned array may contain different elements than the original array. In the example code above, the .map() method is used to add ' joined the contest.' string at the end of each element in the finalParticipants array.</td>
+                  <td class="example">const finalParticipants = ['Taylor', 'Donald', 'Don', 'Natasha', 'Bobby'];<br>// add string after each final participant<br>const announcements =<br>finalParticipants.map(member =&gt; {<br>return member + ' joined the contest.';<br>})<br>console.log(announcements);</td>
+                </tr>
+              </tbody>
+            </table>
         </body>
     </html>
